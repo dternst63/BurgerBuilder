@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import Aux from "../../../hoc/Auxilary/Auxilary";
 import Button from "../../UI/Button/Button";
 
-class orderSummary extends Component {
+class OrderSummary extends Component {
   render() {
     const ingredientSummary = Object.keys(this.props.ingredients).map(
-      igKeys => {
+      (igKeys) => {
         return (
           <li key={igKeys}>
             <span style={{ textTransform: "capitilze" }}>{igKeys}</span> :{" "}
@@ -35,4 +35,4 @@ class orderSummary extends Component {
   }
 }
 
-export default orderSummary;
+export default OrderSummary;
